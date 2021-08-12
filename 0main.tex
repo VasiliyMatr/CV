@@ -1,0 +1,70 @@
+\documentclass[11pt,a4paper,oneside]{article} % dock basic params
+
+% Ru lang stuff
+    \usepackage[utf8x]{inputenc}
+    \usepackage[T2A]{fontenc}
+
+% for colored hyperrefs
+    \usepackage{xcolor}
+    \usepackage{hyperref}
+
+ % Hyperrefs colors
+    \definecolor{linkcolor}{HTML}{0000CD} % refs color
+    \definecolor{urlcolor}{HTML}{0000CD} % hrefs color
+
+    \hypersetup{pdfstartview=FitH,  linkcolor=linkcolor,urlcolor=urlcolor, colorlinks=true}
+
+% for pictures
+    \usepackage{graphicx}
+
+% for enumerates
+    \usepackage[shortlabels]{enumitem}
+
+% running titles
+    \usepackage{fancybox}
+    \usepackage{fancyhdr}
+
+% no idents
+    \setlength{\parindent}{0cm}
+
+%for drawings
+    \usepackage{tikz}
+    \usetikzlibrary{calc}
+    \usetikzlibrary{decorations.pathmorphing}
+
+% dock fields 12 12 15 28
+    \usepackage[left=12mm, top=12mm, right=15mm, bottom=20mm, nohead, footskip=10mm]{geometry}
+
+% path to all pictures
+\graphicspath{{pictures/}}
+
+% for easy mini pages with shifts
+    \newcommand{\shiftedText}[3]{
+    \hspace*{#1}\begin{minipage}[t]{#2}
+        #3
+    \end{minipage}
+    }
+
+% page style setup (for running titles)
+    \fancypagestyle{plain}{ %
+        \fancyhf{} % remove everything
+
+         % lines parameters
+        \renewcommand{\headrulewidth}{0pt}
+        \renewcommand{\footrulewidth}{0pt}
+    }
+
+% choosing page style with setupped running titles
+    \pagestyle{plain}
+
+% DOC BODY
+\begin{document}
+
+    % some text placement parameters
+        \textheight = 245mm
+        \leftskip = 10mm
+
+    % files input
+        \input{1cv.tex}
+
+\end{document}
