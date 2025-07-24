@@ -22,42 +22,47 @@
 \usepackage[left=0.40in,top=0.3in,right=0.75in,bottom=0.1in]{geometry} % Document margins
 \usepackage{fontawesome}
 \usepackage{times}
+\usepackage{makecell}
+
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 
 \name{Vasilii Matrenin}
 
-\address{\faGithub{ github.com/VasiliyMatr} $\,$ \faEnvelope{ matrenin.vn@phystech.edu}}
-\address{\faMapMarker{ Russia, Moscow}}
+\address{\faGithub{github.com/VasiliyMatr} $\,$ \faEnvelope{vasiliymatrenin@gmail.com}}
+\address{\faMapMarker{Russia, Moscow}}
 
 \begin{document}
-{\centerline {\em \textbf { \Large C/C++ Developer } } }
+{\centerline {\em \textbf{\Large System Programmer}}}
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION
+%   EDUCATION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Education}
 
-{\bf Moscow Institute of Physics and Technology } \hfill {\em Sep 2020 - Jun 2022} 
-\\{ \textit { Applied Physics and Mathematics, DREC Department, Bachelors second-year
-student}}
+\textbf{Moscow Institute of Physics and Technology} \hfill {\em 2020 - 2024} \\
+\textit{Applied Physics and Mathematics, DREC Department, Bachelors degree} \\
+\textit{Thesis: Synthetic execution traces generation for testing:}
+    $\href{https://github.com/VasiliyMatr/bachelors_diploma}{\texttt{VasiliyMatr/bachelors\_diploma}}$
+
+\textbf{Moscow Institute of Physics and Technology} \hfill {\em 2024 - Present} \\
+\textit{Applied Physics and Mathematics, DREC Department, Masters student}
 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	SKILLS
+%   SKILLS
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Skills}
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Languages: \ & C/C++, Python, Bash, Assembly \\
-
-Software \& Tools: & CMake, Make, Git, Linux, debugging tools, profiling tools,
-testing tools \\
-
-Math: & Math Analysis, Linear Algebra, Differential Equations \\
-
-Other Skills: & CPU micro-arch, English (B1), \LaTeX , Russian (C2)
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}}l }
+Languages: & C/C++, Rust, Lua, Bash, Assembly, Python \\
+\\
+Software \& Tools: & LLVM, Sol2, GTest, CMake, Make, VHDL, Git, Linux, debugging, profiling \\
+\\
+Math: & Math Analysis, Linear Algebra, Diff Equations, Integrals, Digital Signals Processing \\
+\\
+Other Skills: & CPU micro-arch, CPU functional sim, PLs VMs, PLs Design, \LaTeX, English (C1)
 \end{tabular}
 
 \end{rSection}
@@ -67,68 +72,42 @@ Other Skills: & CPU micro-arch, English (B1), \LaTeX , Russian (C2)
 %--------------------------------------------------------------------------------
 \begin{rSection}{Projects (All available on Github)}
 
-{\bf Second-year ILAB projects} \hfill {\em Sep 2021 - May 2022}
-\\ {Repository: $\href {https://github.com/VasiliyMatr/ILAB_2ndYEAR}
-    {VasiliyMatr/ILAB\_2ndYEAR}$}
-\\
-\\ There are good projects written in C++ and built with CMake in this repository.
+\textbf{Functional RISC-V simulator} \hfill {\em Sep 2023 - Jul 2024} \\
+Repository: $\href{https://github.com/VasiliyMatr/sim2023}{\texttt{VasiliyMatr/sim2023}}$ \\
+Features: MMU, Plugins support, 400-500 MIPS on 11 queens benchmark run on low-end laptop
 
-{\bf Bachelors first-term projects} \hfill {\em Sep 2020 - Jan 2021}
-\\ Repository: $\href {https://github.com/VasiliyMatr/MIPT_PROG_1stTERM}
-    {VasiliyMatr/MIPT\_PROG\_1stTERM}$
-\\- Assembly compiler, which produces executables. There is also a CPU simulator to run \\
-    such executables:
-    $\href {https://github.com/VasiliyMatr/MIPT_PROG_1stTERM/tree/master/T04CPU}{T04CPU}$
-\\- Toy programming language compiler, which produces assembly outputs that are  \\
-    used in T04CPU:
-    $\href {https://github.com/VasiliyMatr/MIPT_PROG_1stTERM/tree/master/T08LANG}{T08LANG}$
+\textbf{LLVM practice} \hfill {\em Sep 2023 - Jul 2024} \\
+Repositories: $\href{https://github.com/VasiliyMatr/LLVM_Practice}{\texttt{VasiliyMatr/LLVM\_Practice}}$,
+    $\href{https://github.com/VasiliyMatr/llvm-project/tree/users/VasiliyMatr/bachelors-practice}{\texttt{VasiliyMatr/llvm-project}}$ \\
+Features: Tracing instrumentation pass, Frontend for toy language (based on Flex + Bison), Backend for toy ISA
 
+\textbf{JIT and AOT practice} \hfill {\em Sep 2024 - Jul 2025} \\
+Repository: $\href{https://github.com/VasiliyMatr/jit_and_aot}{\texttt{VasiliyMatr/jit\_and\_aot}}$ \\
+Features: IR Library, Graphs Alogos (DFS, RPO, Dom Tree, Loop Tree), Peepholes, Checks Elimination \\
 
-{\bf Bachelors second-term projects} \hfill {\em Feb 2021 - May 2021}
-\\ Repository: $\href {https://github.com/VasiliyMatr/MIPT_PROG_2ndTERM}
-    {VasiliyMatr/MIPT\_PROG\_2ndTERM}$
-\\- Optimizations with intrinsics:
-    $\href {https://github.com/VasiliyMatr/MIPT_PROG_2ndTERM/tree/master/T05MANDEL}{T05MANDEL}$,
-    $\href {https://github.com/VasiliyMatr/MIPT_PROG_2ndTERM/tree/master/T06HASH}{T06HASH}$
-\\- T04CPU executables to x86 executables binary translator:
-    $\href {https://github.com/VasiliyMatr/MIPT_PROG_2ndTERM/tree/master/T07JIT}{T07JIT}$
-\\- There is also some assembly code in a few projects.
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE
+%   WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Work Experience}
 
-{\bf Intel corporation, IPP Domain internship} \hfill {\em Jul 2021 - Aug 2021}
-\\ My manager and mentor highly valued my work and sent good
-    $\href {https://github.com/VasiliyMatr/CV/tree/master/PDF/ISI2021_feedback.pdf}{feedback}$
+\textbf{Huawei corporation, R\&D in CPU \& Software co-design} \hfill {\em Jul 2022 - Present}
+\begin{itemize}
+\item Implemented data processing/generation tools
+\item Participated in future directions discussions
+\item Managed small team (3 people)
+\item Mentored 2 junior devs
+\end{itemize}
+
+\textbf{Intel corporation, IPP Domain internship} \hfill {\em Jul 2021 - Aug 2021}
+\begin{itemize}
+\item Investigated possibilities for Intel IPP data compression algos integration
+\item Optimized Intel IPP data compression algos
+\item My manager and mentor highly valued my work and sent good
+    $\href{https://github.com/VasiliyMatr/CV/tree/master/PDF/ISI2021_feedback.pdf}{feedback}$
+\end{itemize}
 
 \end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Finished additional courses}
-
-{\bf Introduction to Industrial Programming and Data Structures, Mail.ru} \hfill
-    {\em Sep 2020 - Jan 2021}
-\\ Lecturer - I. Dedinsky.
-
-{\bf Operating System and CPU Simulation, HiSilicon} \hfill {\em Sep 2021 - May 2022}
-\\ Lecturer - I. Petushkov.
-
-{\bf C++ Basic Course, ILAB} \hfill {\em Sep 2021 - May 2022}
-\\ Lecturer - K. Vladimirov.
-
-{\bf CPU micro-architecture, ILAB} \hfill {\em Sep 2021 - May 2022}
-\\ Lecturer - K. Korolev.
-
-{\bf STM32 Microcontrollers Introduction, MIPT DREC} \hfill {\em Sep 2020 - Jan 2021}
-
-{\bf FPGA and Verilog Introduction, MIPT DREC} \hfill {\em Feb 2021 - May 2021}
-
-\end{rSection}
-
 
 \end{document}
